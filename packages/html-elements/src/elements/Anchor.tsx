@@ -1,9 +1,9 @@
 import React, { ComponentType, forwardRef } from 'react';
 import { StyleSheet, Linking, Platform } from 'react-native';
 
+import { em } from '../css/units';
 import Text from '../primitives/Text';
 import { LinkProps } from './Text.types';
-import { em } from '../css/units';
 
 export const A = forwardRef(({ href, target, ...props }: LinkProps, ref) => {
   const nativeProps = Platform.select<LinkProps>({
