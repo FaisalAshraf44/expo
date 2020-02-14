@@ -1,7 +1,7 @@
 import React, { forwardRef } from 'react';
 import { StyleSheet, Linking, Platform } from 'react-native';
-import Text from '../primitives/Text';
 import { em } from '../css/units';
+import Text from '../primitives/Text';
 export const A = forwardRef(({ href, target, ...props }, ref) => {
     const nativeProps = Platform.select({
         web: {
